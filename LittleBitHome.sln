@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3D84E425-A7E6-4AF0-B0F4-C0F2BF3B4E62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F456A67C-376D-4D48-8333-F44FCC4ACB0B}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "LittleBitHome", "src\LittleBitHome\LittleBitHome.xproj", "{82709D58-9E9C-445D-8545-2739A81C9079}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82709D58-9E9C-445D-8545-2739A81C9079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82709D58-9E9C-445D-8545-2739A81C9079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82709D58-9E9C-445D-8545-2739A81C9079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82709D58-9E9C-445D-8545-2739A81C9079}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{82709D58-9E9C-445D-8545-2739A81C9079} = {3D84E425-A7E6-4AF0-B0F4-C0F2BF3B4E62}
+	EndGlobalSection
+EndGlobal
