@@ -1,0 +1,15 @@
+{
+	"version": "1.0.0",
+	"name": "asp.net",
+	"private": true,
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-minify": "0.0.14",
+    "gulp-main-bower-files": "1.5.3",
+    "gulp-uglify": "2.0.0",
+    "gulp-concat": "2.6.0",
+    "gulp-filter": "4.0.0",
+    "gulp-clean-css": "2.0.13",
+    "gulp-print": "2.0.1"
+  }
+}
