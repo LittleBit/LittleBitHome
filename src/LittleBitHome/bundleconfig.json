@@ -5,11 +5,11 @@
   },
     {
         "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
-        "inputFiles": [ "wwwroot/lib/bootstrap/dist/css/bootstrap.css" ]
+        "inputFiles": [ "Content/lib/bootstrap/dist/css/bootstrap.css" ]
     },
     {
         "outputFileName": "wwwroot/js/site.min.js",
-        "inputFiles": [ "wwwroot/js/site.js" ],
+        "inputFiles": [ "Content/js/site.js" ],
         "minify": {
             "enabled": true,
             "renameLocals": true
@@ -18,7 +18,7 @@
     },
     {
         "outputFileName": "wwwroot/lib/jquery/dist/jquery.min.js",
-        "inputFiles": [ "wwwroot/lib/jquery/dist/jquery.js" ],
+        "inputFiles": [ "Content/lib/jquery/dist/jquery.js" ],
         "minify": {
             "enabled": true,
             "renameLocals": true
@@ -27,7 +27,7 @@
     },
     {
         "outputFileName": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
-        "inputFiles": [ "wwwroot/lib/bootstrap/dist/js/bootstrap.js" ],
+        "inputFiles": [ "Content/lib/bootstrap/dist/js/bootstrap.js" ],
         "minify": {
             "enabled": true,
             "renameLocals": true
