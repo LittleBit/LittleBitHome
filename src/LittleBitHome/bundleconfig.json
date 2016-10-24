@@ -4,7 +4,7 @@
     "inputFiles": [ "wwwroot/css/site.css" ]
   },
     {
-        "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+        "outputFileName": "wwwroot/lib/bootstrap/bootstrap.min.css",
         "inputFiles": [ "Content/lib/bootstrap/dist/css/bootstrap.css" ]
     },
     {
@@ -17,7 +17,7 @@
         "sourceMap": false
     },
     {
-        "outputFileName": "wwwroot/lib/jquery/dist/jquery.min.js",
+        "outputFileName": "wwwroot/lib/jquery/jquery.min.js",
         "inputFiles": [ "Content/lib/jquery/dist/jquery.js" ],
         "minify": {
             "enabled": true,
@@ -26,7 +26,7 @@
         "sourceMap": false
     },
     {
-        "outputFileName": "wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+        "outputFileName": "wwwroot/lib/bootstrap/bootstrap.min.js",
         "inputFiles": [ "Content/lib/bootstrap/dist/js/bootstrap.js" ],
         "minify": {
             "enabled": true,
