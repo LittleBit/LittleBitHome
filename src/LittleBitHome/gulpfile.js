@@ -1,4 +1,4 @@
-/// <binding BeforeBuild='Copy-font-files, BowerFiles-Copy-Clean' Clean='BowerFiles-Copy-Clean, Copy-font-files' />
+/// <binding BeforeBuild='Copy-font-files, BowerFiles-Copy-Clean, Minify-Content-css' Clean='BowerFiles-Copy-Clean, Copy-font-files, Minify-Content-css' />
 /*
 This file in the main entry point for defining Gulp tasks and using Gulp plugins.
 Click here to learn more. http://go.microsoft.com/fwlink/?LinkId=518007
@@ -11,6 +11,7 @@ var uglify = require("gulp-uglify");
 var gulpFilter = require("gulp-filter");
 var cleanCss = require("gulp-clean-css");
 var print = require("gulp-print");
+var rename = require("gulp-rename");
 
 gulp.task("BowerFiles-Copy-Clean", function () {
     var filterJs = gulpFilter("**/*.js", { restore: true });
@@ -29,7 +30,6 @@ gulp.task("BowerFiles-Copy-Clean", function () {
                 }
             }
         }))
-        .pipe(print())
         .pipe(filterJs)
         .pipe(concat("vendor.js"))
         .pipe(uglify())
@@ -37,7 +37,16 @@ gulp.task("BowerFiles-Copy-Clean", function () {
         .pipe(gulp.dest("./wwwroot/lib"));
 });
 
-gulp.task("Copy-font-files", function() {
-    return gulp.src("./bower_components/font-awesome/fonts/**/*.*")
-        .pipe(gulp.dest("./wwwroot/lib/font-awesome/fonts"));
-})
+gulp.task("Copy-font-files",
+    function() {
+        return gulp.src("./bower_components/font-awesome/fonts/**/*.*")
+            .pipe(gulp.dest("./wwwroot/lib/font-awesome/fonts"));
+    });
+
+gulp.task("Minify-Content-css",
+    function() {
+        return gulp.src("./Content/css/*.css")
+            .pipe(cleanCss())
+            .pipe(rename({ suffix: ".min"}))
+            .pipe(gulp.dest("./wwwroot/css"));
+    });

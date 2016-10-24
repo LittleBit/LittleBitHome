@@ -10,6 +10,7 @@
     "gulp-concat": "2.6.0",
     "gulp-filter": "4.0.0",
     "gulp-clean-css": "2.0.13",
-    "gulp-print": "2.0.1"
+    "gulp-print": "2.0.1",
+    "gulp-rename": "1.2.2"
   }
 }
